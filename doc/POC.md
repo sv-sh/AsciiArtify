@@ -146,7 +146,7 @@ Forwarding from [::1]:8080 -> 8080
 Handling connection for 8080
 The tab in browser is opened
 
-![argo](./doc/argo.jpg)
+![argo](argo.jpg)
 
 Login Using CLI:
 The initial password for the admin account is auto-generated and stored as a secret. Retrieve it using:
@@ -157,6 +157,6 @@ $ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.p
 login use the credentials.
 
 
-![argo_login](./doc/login_argo.jpg)
+![argo_login](login_argo.jpg)
 
 
