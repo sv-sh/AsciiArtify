@@ -61,7 +61,8 @@ curl -F 'image=@./tmp.png' localhost:8088/img/
 
 ![result](result.png)
 
-4. Clean
+4. Clean.
+
 Remove cluster and docker containers:
 
 k3d cluster delete demo
