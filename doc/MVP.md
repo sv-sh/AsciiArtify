@@ -27,11 +27,13 @@ After this, ArgoCD will automatically determine the application parameters using
 Then we tick the checkbox: AUTO-CREATE NAMESPACE, so Argo will create the new namespace in order to be synchronized with the repository properly (helm no longer has this function)
 
 Click 'create'
-![app_create](picture/created_demo.png)
+
+![app_create](created_demo.png)
 
 2.Application Sync.
 Click 'synchronize',view changes and details:
-![sync](picture/sync.png)
+
+![sync](sync.png)
 
 All changes in repo affect the app, we can see it  after changing the value in the helm chart:
 https://github.com/sv-sh/go-demo-app/blob/master/helm/values.yaml
@@ -56,7 +58,8 @@ curl -F 'image=@/specified/path.png' localhost:8088/img/
 wget -O ./temp/pic.png https://blog.hubspot.com/hs-fs/hubfs/how-to-make-picture-into-link_4-1.webp?width=595&height=400&name=how-to-make-picture-into-link_4-1.webp
 
 curl -F 'image=@./tmp.png' localhost:8088/img/
-![result](picture/result.png)
+
+![result](result.png)
 
 4. Clean
 Remove cluster and docker containers:
